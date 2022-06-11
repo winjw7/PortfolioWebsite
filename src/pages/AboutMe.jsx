@@ -98,10 +98,10 @@ function AboutMe() {
                     @media only screen and (max-width: 800px) {
                         .about-me > .body {
                             margin-top: 50px;
-                            flex-direction: column;
+                            flex-direction: column-reverse;
                             width: 100%;
                             align-items: center;
-                            gap: 25px;
+                            gap: 50px;
                         }
 
                         .about-me {

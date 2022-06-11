@@ -35,6 +35,7 @@ function FrontPage() {
                         background: linear-gradient(90deg, transparent, var(--darker-primary));
                         overflow: hidden;
                         font-size: 32px;
+                        transition-duration: .35s;
                     }   
 
                     .content {
@@ -93,57 +94,122 @@ function FrontPage() {
                         margin-right: auto;
                         text-align: left;
                         max-width: fit-content;
-                      
+                    
                         animation: 
-                          typing 3s steps(80, end),
-                          blink-caret-first 3s,
-                          show-anim .1s infinite;
-                      }
-                      
-                      
-                      .typewriter#first {
+                        typing 3s steps(80, end),
+                        blink-caret-first 3s,
+                        show-anim .1s infinite;
+                    }
+                    
+                    
+                    .typewriter#first {
                         animation-delay: 0s;
-                      }
-                      
-                      .typewriter#second {
+                    }
+                    
+                    .typewriter#second {
                         animation-delay: 3s;
-                      }
-                      
-                      .typewriter#third {
+                    }
+                    
+                    .typewriter#third {
                         animation: 
-                          typing 3s steps(80, end),
-                          blink-caret 2s infinite,
-                          show-anim .1s infinite;
-                      
+                        typing 3s steps(80, end),
+                        blink-caret 2s infinite,
+                        show-anim .1s infinite;
+                    
                         animation-delay: 6s;
                         border-right: .15em solid var(--alt-text);
                         overflow: hidden;
-                      }
-                      
-                      @keyframes show-anim {
+                    }
+                    
+                    @keyframes show-anim {
                         from { opacity: 1; }
                         to { opacity: 1; }
-                      }
-                      
-                      /* The typing effect */
-                      @keyframes typing {
+                    }
+                    
+                    /* The typing effect */
+                    @keyframes typing {
                         from { width: 0; }
                         to { width: 100%; }
-                      }
-                      
-                      /* The typewriter cursor effect */
-                      @keyframes blink-caret {
+                    }
+                    
+                    /* The typewriter cursor effect */
+                    @keyframes blink-caret {
                         from, to { border-color: transparent; }
                         50% { border-color: var(--alt-text); }
-                      }
-                      
-                      /* The typewriter cursor effect */
-                      @keyframes blink-caret-first {
+                    }
+                    
+                    /* The typewriter cursor effect */
+                    @keyframes blink-caret-first {
                         0% { border-color: var(--alt-text); border-right: .15em solid var(--alt-text); }
                         98% { border-color: var(--alt-text); border-right: .15em solid var(--alt-text); }
                         99% { border-color: transparent  }
-                      }
-                      
+                    }
+                    
+                    @media only screen and (max-width: 1550px) {
+                        .content > .text > div {
+                            font-size: 20px;
+                        }
+
+                        .content > .text > div:nth-child(2) {
+                            font-size: 64px;
+                        }
+                        
+                        .content > .text > div:nth-child(3) {
+                            font-size: 32px;
+                            -webkit-text-stroke: 1px #668DC8;
+                        }
+
+                        .initial-page {
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 1050px) {
+                        .img-container {
+                            display: none;
+                        }
+
+                        .content {
+                            margin-left: 0px;
+                        }
+
+                        .content > .text {
+                            width: unset;
+                        }
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        .content > .text > div {
+                            font-size: 16px;
+                        }
+
+                        .content > .text > div:nth-child(2) {
+                            font-size: 32px;
+                        }
+                        
+                        .content > .text > div:nth-child(3) {
+                            font-size: 26px;
+                            -webkit-text-stroke: 1px #668DC8;
+                        }
+
+                        .initial-page {
+                            font-size: 16px;
+                            overflow: hidden;
+                        }
+                    }
+
+                    @media only screen and (max-width: 500px) {
+                        .typewriter {
+                            white-space: break-spaces !important;
+                            animation-duration: 0s;
+                            width: fit-content !important;
+                            opacity: 1 !important;
+                        }
+
+                        .initial-page > .content > .text {
+                            margin-left: 75px;
+                        }
+                    }
                 `}
             </style>
         </>

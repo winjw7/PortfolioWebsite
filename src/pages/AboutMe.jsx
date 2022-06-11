@@ -79,6 +79,37 @@ function AboutMe() {
                    .header {
                        font-family: Montserrat-Bold;
                    }
+
+                   @media only screen and (max-width: 1200px) {
+                        .about-me > .body > .text {
+                            font-size: 16px;
+                        }
+
+                        .image > .me {
+                            height: 200px;
+                        }
+
+                        .square {
+                            height: 180px;
+                            width: 180px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        .about-me > .body {
+                            margin-top: 50px;
+                            flex-direction: column;
+                            width: 100%;
+                            align-items: center;
+                            gap: 25px;
+                        }
+
+                        .about-me {
+                            margin-left: 0px;
+                            align-items: center;
+                            margin-top: 50px;
+                        }
+                    }
                 `}
             </style>
         </>

@@ -14,6 +14,12 @@ function Footer() {
                        margin-bottom: 25px;
                        color: var(--alt-text);
                    }
+
+                   @media only screen and (max-width: 800px) {
+                       .footer {
+                           font-size: 12px;
+                       }
+                   }
                 `}
             </style>
         </>

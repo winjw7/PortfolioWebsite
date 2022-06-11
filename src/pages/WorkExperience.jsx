@@ -51,6 +51,14 @@ function PastJob({Name, Image, Year, Desc}) {
                         justify-content: center;
                         align-items: center;
                     }
+
+                    @media only screen and (max-width: 450px) {
+                        .job {
+                            width: 200px;
+                            height: 200px;
+                            font-size: 20px;
+                        }
+                    }
                 `}
             </style>
         </>
@@ -186,6 +194,25 @@ function WorkExperience() {
 
                     .header {
                         font-family: Montserrat-Bold;
+                    }
+
+                    @media only screen and (max-width: 450px) {
+                        .header {
+                            font-size: 20px;
+                        }
+                    }
+
+                    @media only screen and (max-width: 800px) {
+                        .work-experience {
+                            margin-left: 0px;
+                            align-items: center;
+                        }
+
+                        .jobs {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
                     }
                 `}
             </style>

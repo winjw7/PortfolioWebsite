@@ -42,6 +42,34 @@ function Navbar() {
                         font-size: 24px;
                         gap: 50px;
                    }
+
+                   @media only screen and (max-width: 1000px) {
+                        .sections {
+                            font-size: 16px;
+                            gap: 25px;
+                        }
+                   }
+
+                   @media only screen and (max-width: 750px) {
+                        .logo {
+                            display: none;
+                        }
+
+                        .sections {
+                            margin-right: auto;
+                        }
+
+                        .navbar {
+                            margin-left: 0px;
+                        }
+                   }
+
+                   @media only screen and (max-width: 500px) {
+                        .sections {
+                            font-size: 10px;
+                            gap: 15px;
+                        }
+                   }
                 `}
             </style>
         </>

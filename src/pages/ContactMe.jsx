@@ -49,6 +49,27 @@ function ContactMe() {
                     .header {
                         font-family: Montserrat-Bold;
                     }
+
+                    @media only screen and (max-width: 800px) {
+                        .contact-me {
+                            font-size: 16px;
+                            margin-left: 0px;
+                            align-items: center;
+                        }
+
+                        .section > .type {
+                            margin-right: 0px;
+                            width: 60px;
+                        }
+
+                        .section {
+                            font-size: 12px;
+                        }
+
+                        .section > .info {
+                            margin-left: 0px;
+                        }
+                    }
                 `}
             </style>
         </>

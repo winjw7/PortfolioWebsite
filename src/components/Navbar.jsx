@@ -1,4 +1,5 @@
 import { scrollTo } from "../components/ScrollTo";
+import resume from "../media/other/resumeCV.pdf";
 
 function Navbar() {
     return (
@@ -13,7 +14,7 @@ function Navbar() {
                     <div className="hover" onClick={() => scrollTo({id: "aboutme", duration: 1500})}>About Me</div>
                     <div className="hover" onClick={() => scrollTo({id: "workexp", duration: 1500})}>Experience</div>
                     <div className="hover"onClick={() => scrollTo({id: "contactme"})}>Contact</div>
-                    <div className="hover">Resume</div>
+                    <div className="hover" onClick={() => window.open(resume, "_blank")}>Resume</div>
                 </div>
             </div>
 

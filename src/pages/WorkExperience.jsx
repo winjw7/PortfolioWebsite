@@ -80,7 +80,7 @@ function WorkExperience() {
                             Java
                             <br/>
                             <br/>
-                            <a href="https://www.spigotmc.org/resources/authors/winjw7.33100/">Link</a>
+                            <div className="hover" onClick={()=> window.open("https://www.spigotmc.org/resources/authors/winjw7.33100/", "_blank")}><u><b>Link</b></u></div>
                         </div>}
                     />
 
@@ -100,7 +100,7 @@ function WorkExperience() {
                             JavaScript, React, Express, MySQL
                             <br/>
                             <br/>
-                            <a href="https://rustysaloon.com">Link</a>
+                            <div className="hover" onClick={()=> window.open("https://rustysaloon.com", "_blank")}><u><b>Link</b></u></div>
                         </div>}
                     />
                     
@@ -120,7 +120,7 @@ function WorkExperience() {
                             JavaScript, Vue, Express, MongoDB
                             <br/>
                             <br/>
-                            <a href="https://rustclash.com">Link</a>
+                            <div className="hover" onClick={()=> window.open("https://rustclash.com", "_blank")}><u><b>Link</b></u></div>
                         </div>}
                     />
                     
@@ -140,7 +140,7 @@ function WorkExperience() {
                             JavaScript, React, Express, MySQL
                             <br/>
                             <br/>
-                            <a href="https://rustkingdom.gg">Link</a>
+                            <div className="hover" onClick={()=> window.open("https://rustkingdom.gg", "_blank")}><u><b>Link</b></u></div>
                         </div>}
                     />
                     
@@ -160,7 +160,7 @@ function WorkExperience() {
                             JavaScript, React, Express, MySQL
                             <br/>
                             <br/>
-                            <a href="https://skinbuyers.com">Link</a>
+                            <div className="hover" onClick={()=> window.open("https://skinbuyers.com", "_blank")}><u><b>Link</b></u></div>
                         </div>}
                     />
                 </div>

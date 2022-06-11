@@ -16,16 +16,23 @@ function Socials() {
             <style jsx>
                 {`
                    .socials {
-                       position: absolute;
+                       position: fixed;
                        width: 75px;
                        left: 0;
                        bottom: 0;
                        gap: 30px;
-                       margin-bottom: 50px;
                    }
 
                    .socials > img {
                        opacity: .5;
+                   }
+
+                   .socials:after {
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 90px;
+                        background-color: var(--primary);
                    }
                 `}
             </style>

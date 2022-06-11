@@ -34,6 +34,20 @@ function Socials() {
                         height: 90px;
                         background-color: var(--primary);
                    }
+                   
+                   @media only screen and (max-width: 650px) {
+                        .socials {
+                            gap: 25px;
+                        }
+
+                        .socials > img {
+                            width: 30%;
+                        }
+
+                        .socials:after {
+                            height: 45px;
+                        }
+                   }
                 `}
             </style>
         </>

@@ -58,6 +58,10 @@ function PastJob({Name, Image, Year, Desc}) {
                             height: 200px;
                             font-size: 20px;
                         }
+
+                        .desc {
+                            font-size: 12px;
+                        }
                     }
                 `}
             </style>

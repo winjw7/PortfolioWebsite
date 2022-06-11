@@ -64,9 +64,9 @@ function Navbar() {
                         }
                    }
 
-                   @media only screen and (max-width: 500px) {
+                   @media only screen and (max-width: 450px) {
                         .sections {
-                            font-size: 10px;
+                            font-size: 12px;
                             gap: 15px;
                         }
                    }

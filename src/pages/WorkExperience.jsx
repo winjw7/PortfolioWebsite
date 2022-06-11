@@ -21,7 +21,7 @@ function PastJob({Name, Image, Year, Desc}) {
                     .job {
                         width: 300px;
                         height: 300px;
-                        border: 3px dashed var(--primary);
+                        border: 3px solid var(--primary);
                         border-radius: 12px;
                         justify-content: flex-end;
                         background: rgba(var(--primary), 6%);

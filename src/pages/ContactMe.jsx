@@ -10,7 +10,7 @@ function ContactMe() {
                     </div>
                     <div className="section flex">
                         <div className="type">Discord:</div>
-                        <div className="info">winjw7#6836</div>
+                        <div className="info">winJ#6836</div>
                     </div>
                 </div>
             </div>
